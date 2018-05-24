@@ -9,7 +9,7 @@ cascadePath = "haarcascade_frontalface_default.xml"
 #Data directory
 dataPath = os.path.join(mainDir, "../dataset")
 #DataUser directory
-dataUser = os.path.join(mainDir, "../dataset/User")
+dataUser = os.path.join(mainDir, "../dataset/User.")
 #Trainer directory
 trainPath = os.path.join(mainDir, "../trainer")
 #Trainer files
