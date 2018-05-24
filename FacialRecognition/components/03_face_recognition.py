@@ -1,11 +1,9 @@
 import cv2
-import numpy as np
-import os 
+from FacialRecognition.components import gateway
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
-recognizer.read('trainer/trainer.yml')
-cascadePath = "haarcascade_frontalface_default.xml"
-faceCascade = cv2.CascadeClassifier(cascadePath);
+recognizer.read(gateway.trainFile)
+faceCascade = cv2.CascadeClassifier(gateway.cascadePath);
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
